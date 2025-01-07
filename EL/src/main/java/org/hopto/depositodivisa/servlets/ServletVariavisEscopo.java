@@ -5,7 +5,6 @@
 package org.hopto.depositodivisa.servlets;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Date;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -15,7 +14,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import org.hopto.depositodivisa.javaBeans.Pessoa;
 
 /**
  *
@@ -39,7 +37,7 @@ public class ServletVariavisEscopo extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("nomesessao", "sessao teste");
         request.setAttribute("atributorequest", "atributorequest");
-        
+        // Enum meuenum = (Enum) session.getAttributeNames();
         ServletContext application = getServletContext();
         application.setAttribute("dadoContexto",new Date() );
         RequestDispatcher dispatcher = request.getRequestDispatcher("variaveisnoescopo.jsp");

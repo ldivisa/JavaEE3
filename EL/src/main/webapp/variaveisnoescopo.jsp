@@ -16,5 +16,6 @@
              Atributo sessão: ${nomesessao}<br>
              Atributo request: ${atributorequest}<br>
              Atributo application/context: ${dadoContexto}<br>
+             Enum: ${session}
     </body>
 </html>
