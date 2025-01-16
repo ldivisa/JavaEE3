@@ -18,9 +18,6 @@
         <description>Valor da taxa de juros aplicada pela empresa</description>
         <param-name>taxa</param-name>
         <param-value>4</param-value>
-            
-            
-        
     </context-param>
     
 </web-app>

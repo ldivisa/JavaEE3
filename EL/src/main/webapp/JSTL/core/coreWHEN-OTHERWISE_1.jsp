@@ -7,6 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:useBean id="DataBean" class="java.util.Date" />
+
 <!DOCTYPE html>
 <html>
     <head>

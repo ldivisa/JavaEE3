@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <h1> Cabeçalho </h1>
+    <title>Teste</title>
+        <h1> Cabeçalho </h1>
     </head>
 </html>
