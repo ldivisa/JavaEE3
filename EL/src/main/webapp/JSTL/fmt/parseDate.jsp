@@ -3,14 +3,14 @@
     Created on : 15 de jan. de 2025, 11:43:59
     Author     : luiz.souza
 --%>
-
+<!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="css/estilo.css"  />
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <jsp:useBean id="dataBean" class="java.util.Date" />
-<jsp:useBean id="dataBean2" class="com.teste.Data.Data" />
+ 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

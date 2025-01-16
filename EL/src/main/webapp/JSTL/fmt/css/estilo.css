@@ -17,7 +17,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     
 body{
         
-        display: flex;
+        display: block;
         height: 10vh;
         width: 10vw;
         margin-top: 50%;
@@ -26,7 +26,5 @@ body{
         margin-right: 50%;
         align-content: center;
         text-align: center;
-        transform: translateY(-50%);
-        transform: translateX(-50%);
         
     }
