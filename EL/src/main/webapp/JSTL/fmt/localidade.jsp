@@ -4,6 +4,7 @@
     Author     : luiz.souza
 --%>
 <link rel="stylesheet" href="css/estilo.css" >
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -11,17 +12,26 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>fmt - Localidade</title>
     </head>
-    <div>
+    
     <body>
+        <div>
         <h1>fmt - Localidade (ISO):</h1>
         
         Localidade (ISO 639 - idioma / ISO 3166 - pais):  ${pageContext.request.locale}<br>
         Nome da localidade :  ${pageContext.request.locale.displayName}<br>
         Nome da língua:  ${pageContext.request.locale.displayLanguage}  <br>
         Nome do país: ${pageContext.request.locale.displayCountry}  <br>
+        ------------------------------------------------------------<br>        
+        <fmt:setLocale value="pt_BR" scope="page"/>
+        Localidade (ISO 639 - idioma / ISO 3166 - pais):  ${pageContext.request.locale}<br>
+        Nome da localidade :  ${pageContext.request.locale.displayName}<br>
+        Nome da língua:  ${pageContext.request.locale.displayLanguage}  <br>
+        Nome do país: ${pageContext.request.locale.displayCountry}  <br>
+
         
         
         
+        </div>
     </body>
-    </div>
+    
 </html>
