@@ -22,7 +22,7 @@
         Nome da língua:  ${pageContext.request.locale.displayLanguage}  <br>
         Nome do país: ${pageContext.request.locale.displayCountry}  <br>
         ------------------------------------------------------------<br>        
-        <fmt:setLocale value="pt_BR" scope="page"/>
+        <fmt:setLocale value="en_US" scope="page"/>
         Localidade (ISO 639 - idioma / ISO 3166 - pais):  ${pageContext.request.locale}<br>
         Nome da localidade :  ${pageContext.request.locale.displayName}<br>
         Nome da língua:  ${pageContext.request.locale.displayLanguage}  <br>
