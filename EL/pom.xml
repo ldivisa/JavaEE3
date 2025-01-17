@@ -8,8 +8,8 @@
     <name>EL-1.0-SNAPSHOT</name>
     
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>10</maven.compiler.source>
+        <maven.compiler.target>10</maven.compiler.target>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <failOnMissingWebXml>false</failOnMissingWebXml>
@@ -17,26 +17,20 @@
     </properties>
     
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
+     
+
+<!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
 <dependency>
     <groupId>jakarta.servlet.jsp.jstl</groupId>
     <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-    <version>3.0.2</version>
+    <version>3.0.0</version>
 </dependency>
-        <!-- https://mvnrepository.com/artifact/jstl/jstl -->
 <dependency>
-    <groupId>jstl</groupId>
-    <artifactId>jstl</artifactId>
-    <version>1.2</version>
+    <groupId>org.glassfish.web</groupId>
+    <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+    <version>3.0.1</version>
 </dependency>
-
-        <dependency>
-            <groupId>jakarta.platform</groupId>
-            <artifactId>jakarta.jakartaee-api</artifactId>
-            <version>${jakartaee}</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
+        </dependencies>
     
      <build>
         <plugins>
@@ -71,7 +65,7 @@
                             <outputDirectory>${endorsed.dir}</outputDirectory>
                             <silent>true</silent>
                             <artifactItems>
-                                <artifactItem>
+                               <artifactItem>
                                     <groupId>jakarta.platform</groupId>
                                     <artifactId>jakarta.jakartaee-api</artifactId>
                                     <version>${jakartaee}</version>
