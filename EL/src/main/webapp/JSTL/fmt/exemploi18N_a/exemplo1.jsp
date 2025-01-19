@@ -27,8 +27,14 @@
     <body>
     <div>
         <h1>fmt - I18N:</h1>        
-                
-        <form action="exemplo1.jsp" id="formulario" method="get">
+        <form action="" id="bandeiraUSA" name="bandeiraUSA" method="post">
+            <input type="hidden" id="bandeiraAmericana" name="bandeiraAmericana" value="?localidade=en_US">
+            <img src="imagens/bandeiraAmericana.png" width="100" height="100" alt="bandeiraAmericana">
+        </form>  
+        <form action="" id="bandeiraBRA" name="bandeiraBRA" method="post">        
+            <input type="hidden" id="bandeiraBrasil" name="bandeiraBrasil" value="?localidade=pt_BR">
+            <img src="imagens/bandeiraBrasil.jpg" width="100" height="100" alt="bandeiraBrasil">        </form>  
+        <form action="" id="formulario" method="post">
         <a href="?localidade=pt_BR">Portugues</a>    <a href="?localidade=en_US">Ingles</a><br>
         
         <fmt:message key="nome" bundle="${lingua}" /> <input type="text" name="nome"> <br>
