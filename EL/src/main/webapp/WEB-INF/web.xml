@@ -26,4 +26,12 @@
         <param-name>taxa</param-name>
         <param-value>4</param-value>
     </context-param>
+    <context-param>
+        <param-name>
+            jdbc
+        </param-name>
+        <param-value>
+            
+        </param-value>
+    </context-param>
 </web-app>
