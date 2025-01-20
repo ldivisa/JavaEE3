@@ -4,7 +4,9 @@
  */
 package com.teste.Hashtable;
 
-import org.eclipse.tags.shaded.org.apache.xalan.xsltc.runtime.Hashtable;
+import java.util.Hashtable;
+
+
 
 /**
  *
