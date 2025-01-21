@@ -21,7 +21,9 @@
         String senhaBanco=new String(Base64.getDecoder().decode("Q2FyYWxob0Bwb3N0Z3JlczE="));
         session.setAttribute("senha", senhaBanco);
         %>
-        
+        <c:set var="cor0" value="lightgreen"/>
+        <c:set var="cor1" value="lightgrey"/>
+        <c:set var="cor2" value="lightblue"/>
         <sql:setDataSource  
             url="jdbc:postgresql://localhost/javaWebIII"
             driver="org.postgresql.Driver"
@@ -30,12 +32,12 @@
             var="JavaEE"
             />
         <sql:query dataSource="${JavaEE}"
-                   sql="select * from pessoas"
                    var="resultado"
-                   />     
+                    sql="select * from pessoas " />
+        
         
         <table border='1' style="text-align: center">
-            <thead style="background-color: lightgreen">
+            <thead style="background-color: ${cor0}">
                 <tr ><td>Código</td>
                 <td >Nome</td>
                 <td>Email</td>
@@ -45,6 +47,7 @@
                </thead>
         <c:set var="tabela_odd" value="0"/>
         
+        
         <c:forEach 
                items="${resultado.rows}"
                var="iteracao"
@@ -53,11 +56,11 @@
             
              <!--{$i.index %2 == 0}?<tr style="background-color: blue">:<tr style="background-color: red"> -->
             <c:if test="${i.index %2 == 0}">
-                <tr style="background-color: lightgray" >
+                <tr style="background-color: ${cor1}" >
                 <!-- resultado: ${$i.index %2 == 0}- index ${i.index} - par<br> -->
             </c:if>
                 <c:if test="${i.index %2 > 0}">
-                    <tr style="background-color: lightyellow">
+                    <tr style="background-color: ${cor2}">
                     <!--resultado: ${$i.index %2 >= 1}- index ${i.index} - impar<br>-->
                     
                 </c:if>    
@@ -67,8 +70,11 @@
                 <td>${iteracao['pesEmail']}</td><!-- comment -->
                 <td><fmt:formatDate value="${iteracao['pesdatanasc']}" dateStyle="SHORT" /></td><!-- comment -->
             </tr>
+            
             <c:set var="totalRegistros" value="${i.count}" />
+            
         </c:forEach>
+            <tr> <td colspan="4"> O total de registros é ${resultado.rowCount} </td></tr>                    
          O total de registros é ${totalRegistros}                    
         </table>
     </body>
