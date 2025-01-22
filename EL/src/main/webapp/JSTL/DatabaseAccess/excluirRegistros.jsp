@@ -30,16 +30,13 @@
             password="${senha}"
             var="JavaEE"
             />
-        <c:if test="${param.nome != null}">
-        <sql:update dataSource="${JavaEE}">
-            delete from pessoas where pesCodigo= ?
-            <sql:param value="${param.cod}"/>    
-        </sql:update>
-                  
-        </c:if> 
-       
-                
-<!DOCTYPE html>
+<c:choose>
+    
+        <c:when test="${param.cod != null}">
+            <sql:update dataSource="${JavaEE}">
+                delete from pessoas where pescodigo= ${param.cod}
+            </sql:update>
+            <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -51,3 +48,22 @@
         
     </body>
 </html>
+
+            
+                  
+        </c:when> 
+        <c:otherwise>
+            <!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>SetDataSource</title>
+    </head>
+    <body>
+        <h1>Não foi especificado código de parametro para apagar respectivo registro<h1><br>${param.cod}
+    </body>
+</html>
+            </c:otherwise>
+            </c:choose>
+       
+                
