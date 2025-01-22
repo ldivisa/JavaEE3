@@ -1,0 +1,23 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="urn:listacursos"
+            xmlns:bks="cursos">
+
+    <xsd:complexType name="Curso1">
+    <xsd:sequence>
+      <xsd:element name="curso" 
+                  type="bks:CursoForm" 
+                  minOccurs="0" 
+                  maxOccurs="unbounded"/>
+      </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="listacursos">
+    <xsd:sequence>
+      <xsd:element name="curso"   type="xsd:string"/>
+      <xsd:element name="autor"    type="xsd:string"/>
+      <xsd:element name="preço"    type="xsd:string"/>
+      <xsd:element name="nivel"    type="xsd:string" />
+    </xsd:sequence>
+    
+  </xsd:complexType>
+</xsd:schema>

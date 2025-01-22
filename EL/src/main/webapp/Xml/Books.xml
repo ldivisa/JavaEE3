@@ -6,11 +6,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
 
 
 
-<ns1:books
+<ns1:books>
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
     xmlns:ns1='urn:books'
     xsi:schemaLocation='urn:books Books.xsd'>
-    <book id="1">
+    <book>
         <author>Joao Silva</author>
         <title>Um livro</title>
         <genre>Ação</genre>
@@ -18,7 +18,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
         <pub_date>2020-01-01</pub_date>
         <review>Bom</review>
     </book>
-    <book id="2">
+    <book>
         <author>José Santos</author>
         <title>Livro Dois</title>
         <genre>Auto-Ajuda</genre>
@@ -26,7 +26,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
         <pub_date>2022-01-01-</pub_date>
         <review>Otimo</review>
     </book>
-    <book id="3">
+    <book>
         <author>Mario Lago</author>
         <title>Terceiro Livro</title>
         <genre>Didatico</genre>

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<listacursos>
+<ns1:listacursos>
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:ns1='urn:listacursos'
+    xsi:schemaLocation='urn:listacursos cursos.xsd'>
     <curso>
         <descricao>Java para WEB III</descricao>
         <autor>Neri</autor>    
@@ -16,7 +19,7 @@
         <nivel>Avançado</nivel>    
         </curso>
         
-        <curso>
+        <curso>list
         <descricao>Adobe Premiere</descricao>
         <autor>Thiago</autor>    
         <preço>129</preço>
