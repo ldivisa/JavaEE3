@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<venda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Books.xsd"
+    moeda="real">
+<books>
+    <book>
+        <name>Java</name>
+        <price>500</price>
+    </book>
+    <book>
+        <name>Oracle</name>
+        <price>600</price>
+    </book>
+</books>

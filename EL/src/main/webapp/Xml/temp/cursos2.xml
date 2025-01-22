@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<listacursos>
-    <cursos>
-        <curso>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<root>
+    <listacursos>
+    <curso>
         <descricao>Java para WEB III</descricao>
         <autor>Neri</autor>    
         <preço>129</preço>
         <nivel>Intermediario</nivel>    
-        </curso>
+    </curso>
         
         <curso>
         <descricao>Excel Avançado</descricao>
@@ -23,10 +30,13 @@
         </curso>
         
         <curso>
-        <descricao>3D MAX<descricao>
+        <descricao>3D MAX</descricao>
         <autor>Lucas</autor>    
         <preço>129</preço>
         <nivel>Iniciante</nivel>    
         </curso>
-    </cursos>
+
 </listacursos>
+    
+</root>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>ServletPessoa</servlet-name>
+        <servlet-class>org.hopto.depositodivisa.servlets.ServletPessoa</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servletinternacionalizacao</servlet-name>
+        <servlet-class>com.teste.Hashtable.servlet.Servletinternacionalizacao</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletPessoa</servlet-name>
+        <url-pattern>/ServletPessoa</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servletinternacionalizacao</servlet-name>
+        <url-pattern>/Servletinternacionalizacao</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <context-param>
+        <description>Valor da taxa de juros aplicada pela empresa</description>
+        <param-name>taxa</param-name>
+        <param-value>4</param-value>
+    </context-param>
+    <context-param>
+        <param-name>
+            jdbc
+        </param-name>
+        <param-value>
+            
+        </param-value>
+    </context-param>
+</web-app>

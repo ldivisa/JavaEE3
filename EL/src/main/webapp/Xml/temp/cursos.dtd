@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/cursos.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE root SYSTEM "cursos.dtd">
+
+    <root>z
+    ...
+    </root>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT root (listacursos)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT listacursos (curso)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT curso (descricao|autor|preço|nivel)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT descricao (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT autor (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT preço (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nivel (#PCDATA)>
