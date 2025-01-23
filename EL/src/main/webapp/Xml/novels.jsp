@@ -10,6 +10,9 @@
 <c:import var="bookInfo" url="novels.xml"/>  
   
 <x:parse xml="${bookInfo}" var="output"/>  
+<br>----------------------------------------<br><!-- comment -->
+<x:out select="$output/books/book[2]" />
+<br>----------------------------------------<br>
 <p>First Book title: <x:out select="$output/books/book[1]/name" /></p>  
 <p>First Book price: <x:out select="$output/books/book[1]/price" /></p>  
 <p>Second Book title: <x:out select="$output/books/book[2]/name" /></p>  

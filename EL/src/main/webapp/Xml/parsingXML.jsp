@@ -15,16 +15,11 @@
     <body>
         <div id="paginaHome">
         <h1>XML- parsing</h1>
-        <c:import url="cursos.xml" var="k"/>
-        <x:parse xml="${k}" var="output"/>  
-<p>autor 1: <x:out select="$output/listacursos/curso[1]/autor" /></p>  
+        <c:import url="cursos.xml" var="cursos"/>
+        <x:parse xml="${cursos}" var="output"/>  
+<p>autor 1: <x:out select="$output/listacursos/curso[1]/descricao" /></p>  
 <p>autor 1: <x:out select="$output/listacursos/curso[2]/autor" /></p>  
 <br>--------------------------------------------------------------------<br>  
-<x:forEach select="$output/curso">
-    <x:out select="autor"/><br>
-    <x:out select="nome"/><br>
-<br>--------------------------------------------------------------------<br>
-</x:forEach>   
 
         
         </div>

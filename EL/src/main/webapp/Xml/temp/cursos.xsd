@@ -2,7 +2,7 @@
             targetNamespace="urn:listacursos"
             xmlns:bks="cursos">
 
-    <xsd:complexType name="Curso1">
+    <xsd:complexType name="curso">
     <xsd:sequence>
       <xsd:element name="curso" 
                   type="bks:CursoForm" 
@@ -13,7 +13,7 @@
 
   <xsd:complexType name="listacursos">
     <xsd:sequence>
-      <xsd:element name="curso"   type="xsd:string"/>
+      <xsd:element name="descricao"   type="xsd:string"/>
       <xsd:element name="autor"    type="xsd:string"/>
       <xsd:element name="preço"    type="xsd:string"/>
       <xsd:element name="nivel"    type="xsd:string" />
