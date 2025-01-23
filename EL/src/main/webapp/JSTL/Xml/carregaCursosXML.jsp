@@ -8,7 +8,6 @@
 <body>  
 <h2>Cursos Info:</h2>  
 <c:import var="cursos" url="cursos.xml"/>  
-
 <x:parse xml="${cursos}" var="output" />  
 <x:forEach select="$output/cursos/curso">
     <x:out select="autor"/> <br>
