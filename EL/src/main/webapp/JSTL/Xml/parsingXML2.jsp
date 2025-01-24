@@ -48,8 +48,8 @@
                 <c:set var="contador" value="${contador +1}"/>
             </x:forEach>    
             <tr>
-                
-                
+                <td colspan="4">
+                     Existem <c:out value="${contador}"/> registros
             </tr>
         </tbody>
 </table>
