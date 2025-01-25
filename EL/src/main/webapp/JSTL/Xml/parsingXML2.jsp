@@ -1,7 +1,25 @@
 <%-- 
     Document   : xmlSetting
     Created on : 22 de jan. de 2025, 12:24:22
-    Author     : luiz.souza
+    Author     : luiz.souza<dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.0</version>
+        </dependency><dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.3</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.3</version>
+        </dependency>
 --%>
 <%@taglib prefix="x" uri="http://java.sun.com/jsp/jstl/xml" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
