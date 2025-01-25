@@ -1,11 +1,13 @@
 <cursos>
-    <curso>
+    <curso codigo="1">
         <descricao>Java para WEB III</descricao>
+        <codigo>1</codigo>
         <autor>Neri</autor>
         <preco>129</preco>
         <nivel>Intermediario</nivel>
     </curso>
-    <curso>
+    <curso codigo="2">
+        <codigo>2</codigo>
         <descricao>Oracle</descricao>
         <autor>Iren</autor>
         <preco>130</preco>
