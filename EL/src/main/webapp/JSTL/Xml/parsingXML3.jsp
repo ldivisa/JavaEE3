@@ -1,6 +1,8 @@
 <%-- 
     Document   : xmlSetting
-    
+    Created on : 22 de jan. de 2025, 12:24:22
+    Author     : luiz.souza<dependency>
+   
 --%>
 <%@taglib prefix="x" uri="http://java.sun.com/jsp/jstl/xml" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -31,21 +33,23 @@
     </theader>
         <tbody> 
             <x:forEach select="$parseCursos/cursos/curso" varStatus="estado" var="atual">
-                <c:choose>
-                    <c:when test="${contador %2 ==0 }">
+                <x:choose>
+                    <x:when select="$atual/@codigo mod 2 = 0 ">
                         <tr style='background-color: ${cor1}'>
-                    </c:when>
-                    <c:when test="${contador %2 !=0 }">
+                    </x:when>
+                    <x:otherwise >
                         <tr style='background-color: ${cor2}'>
-                    </c:when>        
-                </c:choose> 
+                    </x:otherwise>
+                </x:choose>
                     <td><x:out select="descricao"/></td>
                     <td><x:out select="autor"/></td>
                     <td><x:out select="preco"/></td>
                     <td><x:out select="nivel"/></td>
                 </tr>
                 <c:set var="contador" value="${contador +1}"/>
-            </x:forEach>    
+                
+            </x:forEach>
+                
             <tr>
                 <td colspan="4">
                      Existem <c:out value="${contador}"/> registros
