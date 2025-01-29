@@ -15,10 +15,10 @@
     </head>
     <body>
         <h1>Função contains e containsIgnoreCase</h1>
-        <h2>Parâmetro 1 ->  ${param.texto1} </h2>
-        <h2>Parâmetro 2 ->  ${param.texto2} </h2>
-        
-        
+        <h2>Parâmetro texto 1 ->  ${param.texto1} </h2>
+        <h2>Parâmetro texto 2 ->  ${param.texto2} </h2>
+        Texto 1 contem text 2 ? ${fn:contains(param.texto1, param.texto2)}<br>
+        Texto 1 contem text 2 (ignore case) ? ${fn:containsIgnoreCase(param.texto1, param.texto2)}<br>
     </body>
     
 </html>
