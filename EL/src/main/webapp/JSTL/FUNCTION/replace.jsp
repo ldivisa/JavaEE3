@@ -11,23 +11,27 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSTL - Functions - REPLACE</title>
+        <title>JSTL - Functions - SUBSTRING</title>
     </head>
     <body>
         <form id="formulario" action="" method="GET">
             Texto: <input type="text" autofocus name="texto"/><br>
-            Trecho original:<input type="text" name="original"/>
-            Trecho substituto:<input type="text" name="replacetext"/>
+            Caractere Inicio do Trecho original:<input type="text" name="inicio"/>
+            Caractere Final do trecho original:<input type="text" name="finali"/>
             <input type="submit" value="Enviar" />
         </form>
         
-        <br>  substituindo no texto ${param.texto} o trecho ${param.original} em ${param.replacetext}
+        <br>  Mostrando os segmentos do texto ${param.texto}:
         <br>  
-        <c:forEach items="${fn:replace(param.texto,param.original, param.replacetext)}" var="atual">
-            
-            ${atual}<br>
-            
-        </c:forEach>
+        <br> ${param.inicio} e o caractere inicial selecionado
+        <br> ${param.finali} e o caractere final selecionado
+        <br>
+        <br>
+        <br>Recorte substring: ${fn:substring(param.texto, param.inicio, param.finali)}
+        <br>Recorte substringAfter: ${fn:substringAfter(param.texto, fn:substring(param.texto,param.inicio, param.finali))}
+        <br>Recorte substringBefore: ${fn:substringBefore(param.texto, fn:substring(param.texto,param.inicio, param.finali))}
+          
+        
             <br> Processamento finalizado!
     </body>
     
