@@ -25,9 +25,15 @@ public class tempo extends TagSupport {
         Calendar calendar = Calendar.getInstance();
             String diaSemana=diasSemana[calendar.get(Calendar.DAY_OF_WEEK)];
             String mesAno=mesesAno[calendar.get(Calendar.MONTH)];
-   
+            String mensagem ="";
+            int horaAtual = calendar.get(Calendar.HOUR_OF_DAY);
+            if (horaAtual>6 && horaAtual<12){mensagem="Bom dia";}
+            if (horaAtual>11&&horaAtual<19){mensagem="Boa tarde";}
+            if (horaAtual>18&&horaAtual<23){mensagem="Boa noite";}
+            if (horaAtual<7){mensagem="Boa madrugada";}
         try {
-            jspWriter.print("Hoje é "+diaSemana+", "+calendar.get(Calendar.DAY_OF_MONTH)+" de "+mesAno+" de " +calendar.get(Calendar.YEAR));
+            jspWriter.print(mensagem+"! "+ "Hoje é "+diaSemana+", "+calendar.get(Calendar.DAY_OF_MONTH)+" de "+mesAno+" de " +calendar.get(Calendar.YEAR)+" hora: "+
+                    calendar.get(Calendar.HOUR_OF_DAY)+":"+calendar.get(Calendar.MINUTE));
         } catch (IOException ex) {
             Logger.getLogger(tempo.class.getName()).log(Level.SEVERE, null, ex);
         }

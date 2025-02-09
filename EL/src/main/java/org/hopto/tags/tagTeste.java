@@ -15,15 +15,15 @@ import jakarta.servlet.jsp.tagext.TagSupport;
  * @author luiz.souza
  */
 
-public class PrimeiraTag extends TagSupport {
+public class tagTeste extends TagSupport {
     @Override
         public int doStartTag(){
             JspWriter jspWriter = pageContext.getOut();
-            String imprimir = "Teste de saída via tld";
+            String imprimir = "Teste de saída via tld- SKIP_BODY ";
         try {
             jspWriter.println(imprimir);
         } catch (IOException ex) {
-            Logger.getLogger(PrimeiraTag.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(tagTeste.class.getName()).log(Level.SEVERE, null, ex);
         }
         return SKIP_BODY;
         }

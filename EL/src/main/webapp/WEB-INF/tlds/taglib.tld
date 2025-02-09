@@ -4,8 +4,8 @@
   <short-name>taglib</short-name>
   <uri>WEB-INF/tlds/taglib</uri>
   <tag>
-    <name>taglib</name>
-    <tag-class>org.hopto.tags.PrimeiraTag</tag-class>
+    <name>tagteste</name>
+    <tag-class>org.hopto.tags.tagTeste</tag-class>
   </tag>
   <tag>
     <name>tempo</name>
