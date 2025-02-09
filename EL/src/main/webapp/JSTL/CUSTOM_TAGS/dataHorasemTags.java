@@ -1,4 +1,5 @@
 
+import static java.lang.System.out;
 import java.util.Calendar;
 
 /*
@@ -15,6 +16,11 @@ public class dataHorasemTags {
     private String[] mesAno={"Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"};
     Calendar calendar = Calendar.getInstance();
     private String hoje= calendar.getTime().toString();
+
+public void dataHorasemTags(){
+out.print("Hoje ");
+}
+
 
     public String[] getDiaSemana() {
         return diaSemana;
