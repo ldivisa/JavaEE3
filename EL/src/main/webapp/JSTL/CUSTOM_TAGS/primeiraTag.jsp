@@ -13,7 +13,9 @@
     </head>
     <body>
         <h1>Primeira TAG</h1>
-        <luiz:taglib />            
+        <luiz:taglib />      
+        <br>
+        <luiz:tempo />      
         
     </body>
 </html>

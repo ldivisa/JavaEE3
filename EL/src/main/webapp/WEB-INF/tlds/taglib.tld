@@ -7,4 +7,8 @@
     <name>taglib</name>
     <tag-class>org.hopto.tags.PrimeiraTag</tag-class>
   </tag>
+  <tag>
+    <name>tempo</name>
+    <tag-class>org.hopto.tags.tempo</tag-class>
+  </tag>
 </taglib>
