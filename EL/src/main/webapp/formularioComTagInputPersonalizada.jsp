@@ -18,7 +18,7 @@
             Nome :  <luiz:taginputpersonalizada name="nome" type="texto"/><br>
             Senha:  <luiz:taginputpersonalizada name="senha" type="password"/><br>
             <luiz:taginputpersonalizada name="enviar" type="submit" value="Enviar"/>
-            <input type="submit" name="enviar" value="Enviar" />
+            
         </form>
 
     </body>
