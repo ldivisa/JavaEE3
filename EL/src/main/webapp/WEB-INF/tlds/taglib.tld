@@ -45,6 +45,21 @@
         <required>false</required>
         <rtexprvalue>true</rtexprvalue>
     </attribute>
-    
   </tag>
+  
+   <tag>
+    <name>tabuada</name>
+    <tag-class>org.hopto.tags.Tabuada</tag-class>
+    <attribute>
+        <name>numero</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+   </tag>
+   
+   
+   <tag>
+    <name>ListaPessoas</name>
+    <tag-class>org.hopto.tags.ListaPessoas</tag-class>
+    </tag>
 </taglib>
