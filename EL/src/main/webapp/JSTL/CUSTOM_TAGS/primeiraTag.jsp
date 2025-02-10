@@ -16,6 +16,13 @@
         <luiz:tagteste />      
         <br>
         <luiz:tempo />      
+        <br><!-- comment -->
+        <b>Com atributo interno :</b> <luiz:tempocomatributocomtag nome="Luiz" />
+        <br>
+        <b>Sem atributo:</b> <luiz:tempocomatributocomtag />
+        <br> 
+        <b>Com atributo de parâmetro:</b> <luiz:tempocomatributocomtag nome="${param.nome}" />
+           
         
     </body>
 </html>

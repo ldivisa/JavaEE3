@@ -5,10 +5,46 @@
   <uri>WEB-INF/tlds/taglib</uri>
   <tag>
     <name>tagteste</name>
-    <tag-class>org.hopto.tags.tagTeste</tag-class>
+    <tag-class>org.hopto.tags.TagTeste</tag-class>
   </tag>
   <tag>
     <name>tempo</name>
-    <tag-class>org.hopto.tags.tempo</tag-class>
+    <tag-class>org.hopto.tags.Tempo</tag-class>
+  </tag>
+  
+  <tag>
+    <name>tempocomatributocomtag</name>
+    <tag-class>org.hopto.tags.TempoComAtributoComTag</tag-class>
+    <attribute>
+        <name>nome</name>
+        <required>false</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+ </tag>
+ 
+ <tag>
+    <name>taginputpersonalizada</name>
+    <tag-class>org.hopto.tags.TagInput</tag-class>
+    <attribute>
+        <name>name</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+        <name>type</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+        <name>value</name>
+        <required>false</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+        <name>id</name>
+        <required>false</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
   </tag>
 </taglib>
