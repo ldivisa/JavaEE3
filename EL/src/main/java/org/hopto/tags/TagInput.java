@@ -45,7 +45,7 @@ public class TagInput extends TagSupport {
         }
         
         catch(Exception excecao){
-          Logger.getLogger(TagTeste.class.getName()).log(Level.SEVERE, null, excecao);
+          Logger.getLogger(TagInput.class.getName()).log(Level.SEVERE, null, excecao);
         }
         
         
