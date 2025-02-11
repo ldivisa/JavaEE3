@@ -13,8 +13,8 @@
     </head>
     <body>
         <h1>Primeira TAG</h1>
-        <luiz:tagteste />      
-        <br>
+           
+            <br>
         <luiz:tempo />      
         <br><!-- comment -->
         <b>Com atributo interno :</b> <luiz:tempocomatributocomtag nome="Luiz" />
@@ -22,7 +22,8 @@
         <b>Sem atributo:</b> <luiz:tempocomatributocomtag />
         <br> 
         <b>Com atributo de parâmetro:</b> <luiz:tempocomatributocomtag nome="${param.nome}" />
-           
+        <br><!-- comment -->
+        <luiz:doStartTag-doEndTag />
         
     </body>
 </html>

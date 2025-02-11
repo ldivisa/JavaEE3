@@ -20,11 +20,7 @@ import java.util.logging.Logger;
  */
 public class ListaPessoas extends TagSupport{ 
     private int numero;
-    @Override
-    public int doStartTag(){
-        JspWriter jspWriter = pageContext.getOut();
-                        
-        String  senhaBanco=new String(Base64.getDecoder().decode("Q2FyYWxob0Bwb3N0Z3JlczE="));
+    String  senhaBanco=new String(Base64.getDecoder().decode("Q2FyYWxob0Bwb3N0Z3JlczE="));
         String  url="jdbc:postgresql://localhost/javaWebIII";
         String  driver="org.postgresql.Driver";
         String  user="postgres";
@@ -35,7 +31,10 @@ public class ListaPessoas extends TagSupport{
         ResultSet resultado = null;
         Connection connection = null;
         Statement statement = null;
-        
+    @Override
+    public int doStartTag(){
+        JspWriter jspWriter = pageContext.getOut();
+
         try {
             jspWriter.print("<br><h1>Lista de Pessoas - bd</h1>");
             Class.forName(driver);
@@ -65,6 +64,16 @@ public class ListaPessoas extends TagSupport{
             Logger.getLogger(ListaPessoas.class.getName()).log(Level.SEVERE, null, ex);
         }
     return SKIP_BODY;     
+    }
+    
+    @Override
+    public void release(){
+        
+        try {
+            connection.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(ListaPessoas.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     public int getNumero() {

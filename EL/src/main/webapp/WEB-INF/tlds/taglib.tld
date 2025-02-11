@@ -5,11 +5,11 @@
   <uri>WEB-INF/tlds/taglib</uri>
   <tag>
     <name>tagteste</name>
-    <tag-class>org.hopto.tags.TagTeste</tag-class>
+    <tag-class>org.hopto.tags.TagInput</tag-class>
   </tag>
   <tag>
     <name>tempo</name>
-    <tag-class>org.hopto.tags.Tempo</tag-class>
+    <tag-class>org.hopto.tags.TempoSemTag</tag-class>
   </tag>
   
   <tag>
@@ -61,5 +61,10 @@
    <tag>
     <name>ListaPessoas</name>
     <tag-class>org.hopto.tags.ListaPessoas</tag-class>
+    </tag>
+    
+       <tag>
+    <name>doStartTag-doEndTag</name>
+    <tag-class>org.hopto.tags.doStarttagDoEndTag</tag-class>
     </tag>
 </taglib>
