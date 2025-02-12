@@ -19,7 +19,7 @@ public class DoStartdoEndCalcular extends TagSupport{
     @Override
     public int doStartTag(){
         setNum1(10);
-        setNum2(20);
+        setNum2(200);
         return SKIP_BODY;
     }
     
