@@ -67,4 +67,9 @@
     <name>doStartTag-doEndTag</name>
     <tag-class>org.hopto.tags.doStarttagDoEndTag</tag-class>
     </tag>
+    
+    <tag>
+    <name>DoStartdoEndCalcular</name>
+    <tag-class>org.hopto.tags.DoStartdoEndCalcular</tag-class>
+    </tag>
 </taglib>

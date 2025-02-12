@@ -24,6 +24,9 @@
         <b>Com atributo de parâmetro:</b> <luiz:tempocomatributocomtag nome="${param.nome}" />
         <br><!-- comment -->
         <luiz:doStartTag-doEndTag />
+        <luiz:DoStartdoEndCalcular/>
+        
+        
         
     </body>
 </html>
