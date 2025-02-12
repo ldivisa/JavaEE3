@@ -72,4 +72,26 @@
     <name>DoStartdoEndCalcular</name>
     <tag-class>org.hopto.tags.DoStartdoEndCalcular</tag-class>
     </tag>
+    
+    <tag>
+    <name>InterfaceTag</name>
+    <tag-class>org.hopto.tags.InterfaceTag</tag-class>
+    </tag>
+    
+    <tag>
+    <name>TagCorpoSemInteracao</name>
+    <tag-class>org.hopto.tags.TagCorpoSemInteracao</tag-class>
+    </tag>
+    
+    <tag>
+    <name>TagCorpoComInteracao</name>
+    <tag-class>org.hopto.tags.TagCorpoComInteracao</tag-class>
+    <body-content>JSP</body-content>
+    </tag>
+    
+    <tag>
+    <name>TagCorpoComInteracaoRepeticao</name>
+    <tag-class>org.hopto.tags.TagCorpoComInteracaoRepeticao</tag-class>
+    <body-content>JSP</body-content>
+    </tag>
 </taglib>
