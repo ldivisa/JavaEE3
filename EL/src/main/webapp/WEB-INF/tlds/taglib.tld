@@ -94,4 +94,10 @@
     <tag-class>org.hopto.tags.TagCorpoComInteracaoRepeticao</tag-class>
     <body-content>JSP</body-content>
     </tag>
+    
+        <tag>
+    <name>TagCorpoComInteracaoRepeticaoTabuada</name>
+    <tag-class>org.hopto.tags.TagCorpoComInteracaoRepeticaoTabuada</tag-class>
+    <body-content>JSP</body-content>
+    </tag>
 </taglib>
