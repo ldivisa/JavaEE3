@@ -6,7 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<jsp:useBean id="CursosBean" class="com.teste.Cursos.Cursos" />
+<%--<jsp:useBean id="CursosBean" class="com.teste.Cursos.Cursos" />--%>
 <!DOCTYPE html>
 <html>
     <head>
