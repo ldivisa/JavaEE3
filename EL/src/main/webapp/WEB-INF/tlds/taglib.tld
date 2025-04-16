@@ -111,4 +111,24 @@
         
     </attribute>
     </tag>
+    
+     <tag>
+    <name>TagCorpoComInteracaoRepeticao1</name>
+    <tag-class>org.hopto.tags.TagCorpoComInteracaoRepeticao1</tag-class>
+    <body-content>JSP</body-content>
+    <attribute>
+        <name>contador</name>
+        <required>true</required>
+    </attribute>
+    </tag>
+    
+     <tag>
+    <name>TagCorpoComInteracaoRepeticao2</name>
+    <tag-class>org.hopto.tags.TagCorpoComInteracaoRepeticao2</tag-class>
+    <body-content>JSP</body-content>
+    <attribute>
+        <name>contador</name>
+        <required>true</required>
+    </attribute>
+    </tag>
 </taglib>
