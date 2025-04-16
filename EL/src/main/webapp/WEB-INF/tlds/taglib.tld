@@ -100,4 +100,15 @@
     <tag-class>org.hopto.tags.TagCorpoComInteracaoRepeticaoTabuada</tag-class>
     <body-content>JSP</body-content>
     </tag>
+    
+     <tag>
+    <name>TagCorpoComInteracaoRepeticao1</name>
+    <tag-class>org.hopto.tags.TagCorpoComInteracaoRepeticao1</tag-class>
+    <body-content>JSP</body-content>
+    <attribute>
+        <name>contador</name>
+        <required>true</required>
+        
+    </attribute>
+    </tag>
 </taglib>

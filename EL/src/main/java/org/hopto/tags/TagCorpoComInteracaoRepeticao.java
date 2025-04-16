@@ -29,7 +29,9 @@ public class TagCorpoComInteracaoRepeticao extends BodyTagSupport {
     @Override
     public int doAfterBody() throws JspException{
         contador++;
+        
         if (contador<=10){
+            
             return EVAL_BODY_AGAIN;
         }
         else

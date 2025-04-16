@@ -20,6 +20,7 @@
             
             <br>Tabuada do 9 x ${multiplicador} = ${9*multiplicador}
             <c:set var="multiplicador" value="${multiplicador+1}" />
+            
         </luiz:TagCorpoComInteracaoRepeticao> 
     </body>
 </html>
