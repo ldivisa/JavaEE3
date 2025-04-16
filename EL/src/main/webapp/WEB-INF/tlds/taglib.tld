@@ -131,4 +131,49 @@
         <required>true</required>
     </attribute>
     </tag>
+    
+    <tag>
+    <name>interfaceiterationtag</name>
+    <tag-class>org.hopto.tags.TagIteration</tag-class>
+    <body-content>JSP</body-content>
+    <attribute>
+        <name>nome</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+        <attribute>
+        <name>sobrenome</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    </tag>
+    
+     <tag>
+    <name>tagbodytag</name>
+    <tag-class>org.hopto.tags.TagBodyTag</tag-class>
+    <body-content>JSP</body-content>
+     </tag>
+    
+     <tag>
+    <name>simpletagsupport</name>
+    <body-content>empty</body-content>
+    <tag-class>org.hopto.tags.PrimeiraTagSimples</tag-class>
+    </tag>
+    
+    <tag>
+    <name>simpletagsupport1</name>
+    <body-content>empty</body-content>
+    <tag-class>org.hopto.tags.PrimeiraTagSimples1</tag-class>
+    <attribute>
+        <name>nome</name>
+        <required>true</required>           
+    </attribute>
+     </tag>
+     
+     <tag>
+    <name>simpletagsupport2</name>
+    <body-content>tagdependent</body-content>
+    <tag-class>org.hopto.tags.PrimeiraTagSimples2</tag-class>
+    
+     </tag>
 </taglib>

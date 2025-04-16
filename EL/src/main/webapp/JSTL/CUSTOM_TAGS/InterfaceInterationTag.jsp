@@ -9,11 +9,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Interface Interation Tag</title>
+        <title>Interface Tag</title>
     </head>
     <body>
-        <h1>Interface Interation Tag</h1>
-        <luiz:interfaceiterationtag nome="Luiz" sobrenome="Souza" />
-        
+        <h1>Interface Tag</h1>
+        <luiz:InterfaceTag />
     </body>
 </html>
