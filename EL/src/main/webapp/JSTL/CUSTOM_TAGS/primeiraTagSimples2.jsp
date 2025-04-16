@@ -17,6 +17,7 @@
             <br>
             <luiz:simpletagsupport2> 
             corpo
+            <br>
             </luiz:simpletagsupport2>
     </body>
 </html>

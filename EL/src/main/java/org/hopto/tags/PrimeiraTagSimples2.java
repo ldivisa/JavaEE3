@@ -36,7 +36,8 @@ public class PrimeiraTagSimples2 extends SimpleTagSupport {
         getJspBody().invoke(stringWriter);
         String conteudoBody =  stringWriter.toString();
         JspWriter jspWriterOut = getJspContext().getOut();
-        jspWriterOut.print(conteudoBody);
+        for (int i=0;i<10;i++){
+        jspWriterOut.print(conteudoBody);}
                 
                 
                
