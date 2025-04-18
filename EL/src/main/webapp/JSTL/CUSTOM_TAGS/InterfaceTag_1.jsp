@@ -3,7 +3,8 @@
     Created on : 12 de fev. de 2025, 10:47:54
     Author     : luiz.souza
 --%>
-<%@taglib uri="WEB-INF/tlds/taglib" prefix="luiz" %>
+
+<%@taglib uri="http://depositodivisa.hopto.org" prefix="luiz" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

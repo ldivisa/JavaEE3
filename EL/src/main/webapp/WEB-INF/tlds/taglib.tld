@@ -2,7 +2,7 @@
 <taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
   <tlib-version>1.0</tlib-version>
   <short-name>taglib</short-name>
-  <uri>WEB-INF/tlds/taglib</uri>
+  <uri> http://depositodivisa.hopto.org</uri>
   <tag>
     <name>tagteste</name>
     <tag-class>org.hopto.tags.TagInput</tag-class>
@@ -170,10 +170,33 @@
     </attribute>
      </tag>
      
-     <tag>
+    <tag>
     <name>simpletagsupport2</name>
     <body-content>tagdependent</body-content>
     <tag-class>org.hopto.tags.PrimeiraTagSimples2</tag-class>
+    </tag>
     
-     </tag>
+     <tag>
+    <name>analisecondicional</name>
+    <body-content>JSP</body-content>
+    <tag-class>org.hopto.tags.condicional.TagAnaliseCondicao</tag-class>
+    </tag>
+    
+    <tag>
+    <name>tagif</name>
+    <body-content>JSP</body-content>
+    <tag-class>org.hopto.tags.condicional.TagIf</tag-class>
+    </tag>
+    
+    <tag>
+    <name>condicaofalsa</name>
+    <body-content>JSP</body-content>
+    <tag-class>org.hopto.tags.condicional.TagCondicaoFalsa</tag-class>
+    </tag>
+    
+    <tag>
+    <name>condicaoverdadeira</name>
+    <body-content>JSP</body-content>
+    <tag-class>org.hopto.tags.condicional.TagCondicaoVerdadeira</tag-class>
+    </tag>
 </taglib>
